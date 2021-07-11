@@ -78,10 +78,24 @@ button:hover {
   background-color: #ce0c0c;
 }
 
+button:focus {
+  border: none;
+}
+
 @media (max-width: 600px) {
   nav {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .main h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .main p {
+    font-size: 1rem;
+    text-align: center;
   }
 }
