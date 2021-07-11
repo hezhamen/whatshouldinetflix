@@ -37,7 +37,6 @@ export default function Home() {
     <>
       <Head>
         <title>What Should I Netflix?</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="background-card">
         <div className="background-overlay">
