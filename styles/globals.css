@@ -6,11 +6,74 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.background-card {
+  /* The image used */
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/ff23ad74-6360-41d8-9b2f-1dc7e907e973/IQ-en-20210607-popsignuptwoweeks-perspective_alpha_website_small.jpg");
 }
 
-* {
-  box-sizing: border-box;
+.background-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.background-card,
+.background-overlay {
+  /* Full height */
+  height: calc(100vh);
+  width: calc(100vw);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  padding: 3rem;
+}
+
+#logo {
+  max-height: 3rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(70vh);
+}
+
+.main h1,
+.main p {
+  color: #fff;
+  margin: 0;
+}
+
+.main h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.main p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 35rem;
+  text-align: center;
+}
+
+button {
+  background-color: #db0000;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ce0c0c;
 }
