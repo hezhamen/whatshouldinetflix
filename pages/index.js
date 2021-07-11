@@ -4,7 +4,7 @@ export default function Home() {
     let genre;
     let movtv;
 
-    const choices = ["Movie", "TV Show"];
+    const choices = ["movie", "TV Show"];
     const netflixgenres = [
       "Action & Adventure ",
       "Anime",
