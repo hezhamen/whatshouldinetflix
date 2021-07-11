@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export default function Home() {
   const generateSomething = () => {
     let num;
@@ -32,24 +34,30 @@ export default function Home() {
     document.getElementById("generator").innerHTML = `PICK AGAIN!`;
   };
   return (
-    <div className="background-card">
-      <div className="background-overlay">
-        <nav>
-          <img
-            src="https://fontmeme.com/permalink/210711/499b51033e97681ca78053d54a6870f2.png"
-            id="logo"
-          />
-        </nav>
-        <div className="main">
-          <h1 id="title">No need to decide!</h1>
-          <p id="paragraph">
-            Let WSIN make the decision of the night for you, enjoy your night.
-          </p>
-          <button id="generator" onClick={generateSomething}>
-            PICK A SHOW!
-          </button>
+    <>
+      <Head>
+        <title>What Should I Netflix?</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <div className="background-card">
+        <div className="background-overlay">
+          <nav>
+            <img
+              src="https://fontmeme.com/permalink/210711/499b51033e97681ca78053d54a6870f2.png"
+              id="logo"
+            />
+          </nav>
+          <div className="main">
+            <h1 id="title">No need to decide!</h1>
+            <p id="paragraph">
+              Let WSIN make the decision of the night for you, enjoy your night.
+            </p>
+            <button id="generator" onClick={generateSomething}>
+              PICK A SHOW!
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
